@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular6Demo1": {
+    "Angular6Demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
