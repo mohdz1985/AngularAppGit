@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "tc-test":"ng test --single-run --code-coverage --reporters teamcity,coverage-istanbul",
+    "tc-test":"ng test --single-run",
     "lint": "ng lint",
     "e2e": "ng e2e"
     

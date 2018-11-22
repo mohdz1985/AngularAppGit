@@ -15,7 +15,7 @@ describe('DepartmentService', () => {
 
   it('should be show Department', 
   inject([DepartmentService], (service: DepartmentService) => {
-    expect(service.Getvalue("Zahid")).toContain("o");
+    expect(service.Getvalue("Zahid")).toContain("testing");
   }));
   
 });
