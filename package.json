@@ -6,10 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "tc-test":"ng test --single-run",
+    "tc-test":"ng test --single-run --code-coverage --reporters teamcity,coverage-istanbul",
     "lint": "ng lint",
-    "e2e": "ng e2e"
-    
+    "e2e": "ng e2e"    
   },
   "private": true,
   "dependencies": {
