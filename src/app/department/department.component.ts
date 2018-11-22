@@ -22,6 +22,8 @@ export class DepartmentComponent implements OnInit {
   GetDepartment() {    
   }
 
+  myDir : any;
+
  allPersons = [
      {name: 'Mahesh', age: '25'},
      {name: 'Shakti', age: '23'},
@@ -31,5 +33,9 @@ export class DepartmentComponent implements OnInit {
    
   ngOnInit() {
 	 
+  }
+
+  onSubmit(abc:any){
+
   }
 }

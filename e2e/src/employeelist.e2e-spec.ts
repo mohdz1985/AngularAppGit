@@ -1,6 +1,7 @@
 import { EmployeeListPage } from './employeelist.po';
 import { ToastrService } from 'ngx-toastr';
 import { } from 'jasmine';
+import { browser } from 'protractor';
 
 describe('Employee Add/Update', () => {
     let page: EmployeeListPage;
@@ -20,5 +21,6 @@ describe('Employee Add/Update', () => {
         page.getSubmitButton().click();
         let msgText = page.getToastContainer().getInnerHtml();
         expect(msgText).toContain('Successfully');
+        browser.pause();
        });
 });
