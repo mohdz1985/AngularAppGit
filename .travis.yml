@@ -4,7 +4,7 @@ sudo: true
 group: stable
 script:
 - ng test
-- ng build --prod --aot --base-href "https://mohdz1985.github.io/"
+- ng build --prod --aot --base-href "https://mohdz1985.github.io/AngularAppDep/"
 install:
 - npm install
 - npm install -g @angular/cli
