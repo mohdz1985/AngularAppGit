@@ -4,6 +4,7 @@ sudo: true
 group: stable
 script:
 - ng test
+- ng e2e
 - ng build --prod --aot --base-href "https://github.com/mohdz1985/AngularAppDep/"
 install:
 - npm install
