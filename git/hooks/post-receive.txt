@@ -1,2 +1,0 @@
-https://github.com/mohdz1985/AngularAppGit/blob/master/teamcity-trigger.sh
- 'vcsRoot:(type:jetbrains.git,count:99999),property:(name:url,value:<https://github.com/mohdz1985/AngularAppGit>,matchType:contains,ignoreCase:true),count:99999' 
