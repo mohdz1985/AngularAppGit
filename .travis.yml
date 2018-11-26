@@ -1,0 +1,32 @@
+os: linux
+dist: trusty
+sudo: true
+group: stable
+script:
+- ng test
+- ng build --prod --aot --base-href "https://github.com/mohdz1985/AngularAppDep/"
+install:
+- npm install
+- npm install -g @angular/cli
+node_js: 8.11.2
+language: node_js
+before_script:
+- export CHROME_BIN=/usr/bin/google-chrome
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sudo apt-get update
+- sudo apt-get install -y libappindicator1 fonts-liberation
+- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- sudo dpkg -i google-chrome*.deb
+before_install: null
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  # keep-history: true
+  local_dir: dist
+  
+  # deployment-file: true
+  on:
+    branch: master
+
